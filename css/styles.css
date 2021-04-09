@@ -18,14 +18,29 @@ body {
     color: #EFDEC4;
 }
 
-.calc-button-row {
-    border: 3px solid dodgerblue;
-}
-
 .screen {
     text-align: right;
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
     padding: 20px 5px;
 }
+
+.calc-button-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: .5%;
+}
+
+.calc-button {
+    background-color: #d8d9db;
+    color: #080705;
+    border: none;
+    font-size: 40px;
+    height: 100px;
+    flex-basis: 24.5%;
+}
+
+
+
 
