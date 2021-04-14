@@ -13,10 +13,15 @@ function buttonClick(value){
         // this is a number
         handleNumber(value); 
     }
-        
+    screen.innerText = buffer; 
 };
 
-function handleSymbol(symbol){}
+function handleSymbol(symbol){
+    if(symbol === "C"){
+        buffer = "0";
+        runningTotal = 0;
+    }
+}
 
 function handleNumber(numberString){
     if(buffer === "0"){
@@ -25,7 +30,6 @@ function handleNumber(numberString){
         buffer = buffer + numberString
     }
     console.log('buffer', buffer)
-    screen.innerText = buffer;
 }
 
 function init(){
