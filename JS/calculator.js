@@ -27,7 +27,12 @@ function handleSymbol(symbol){
             buffer = "0";
             runningTotal = 0;
             break;
-            
+        case "&plus":
+        case "&minus":
+        case "&times":
+        case "&divide":
+            handelMath(symbol);
+            break;
     }
 }
 
