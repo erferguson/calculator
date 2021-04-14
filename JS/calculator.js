@@ -17,9 +17,17 @@ function buttonClick(value){
 };
 
 function handleSymbol(symbol){
-    if(symbol === "C"){
-        buffer = "0";
-        runningTotal = 0;
+    // if(symbol === "C"){
+    //     buffer = "0";
+    //     runningTotal = 0;
+    // }
+
+    switch(value){
+        case "C":
+            buffer = "0";
+            runningTotal = 0;
+            break;
+            
     }
 }
 
