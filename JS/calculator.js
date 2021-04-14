@@ -36,6 +36,25 @@ function handleSymbol(symbol){
     }
 }
 
+function handleMath(symbol){
+    if ( buffer === "0"){
+        // do nothing
+        return
+    }
+    const intBuffer = parseInt(buffer);
+    // const intBuffer = +buffer; -- same code/outcome as above
+
+    if ( runningTotal === 0){
+         runningTotal = intBuffer;
+    } else {
+        flushOperation(intBuffer);
+
+    }
+    previousOperator = symbol;
+
+    buffer = "0";
+}
+
 function handleNumber(numberString){
     if(buffer === "0"){
         buffer = numberString;
