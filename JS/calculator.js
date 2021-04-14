@@ -24,10 +24,9 @@ function handleNumber(numberString){
     } else {
         buffer = buffer + numberString
     }
+    console.log('buffer', buffer)
+    screen.innerText = buffer;
 }
-
-
-
 
 function init(){
     document.querySelector('.calc-buttons')
